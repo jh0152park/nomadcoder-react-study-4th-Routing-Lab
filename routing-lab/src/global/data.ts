@@ -11,7 +11,7 @@ interface IAuthor {
     books: IBook[];
 }
 
-export const Authros: IAuthor[] = [
+export const AUTHORS: IAuthor[] = [
     {
         name: "J.K.Rowling",
         profileImage:
