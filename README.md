@@ -2,6 +2,10 @@
 
 nomadcoder react study 4th Routing Lab
 
+# Result URL as below
+
+https://nomadcoder-react-study-4th-routing-lab.pages.dev/
+
 # Requirements
 
 -   Home Page (/): Display a list of all authors.
