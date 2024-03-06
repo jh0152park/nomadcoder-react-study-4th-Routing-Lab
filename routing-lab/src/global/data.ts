@@ -11,10 +11,10 @@ interface IAuthor {
     books: IBook[];
 }
 
-export enum NUMOFAUTHOR {
-    "J.K.Rowling",
-    "J.R.R.Tolkien",
-}
+export const NUMOFAUTHOR: { [key: string]: number } = {
+    "J.K.Rowling": 0,
+    "J.R.R.Tolkien": 1,
+};
 
 export const LOGOS = [
     "/resources/images/logo/HarryPoter_Logo.png",
