@@ -6,19 +6,21 @@ interface IProfileProps {
     name: string;
     logoImage: string;
     profileImage: string;
+    nextPath: string;
 }
 
-export default function Profile({
+export default function Product({
     name,
     logoImage,
     profileImage,
+    nextPath,
 }: IProfileProps) {
     const navigate = useNavigate();
 
     return (
         <VStack
             onClick={() => {
-                navigate(`/${name}`);
+                navigate(nextPath);
             }}
         >
             <Album width={440} height={620} image={profileImage} />
