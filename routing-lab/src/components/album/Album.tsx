@@ -36,6 +36,7 @@ export default function Album({ image, width, height }: IAlbumProps) {
             transform={[
                 `rotateY(${yDeg}deg) rotateX(${xDeg}deg) perspective(350px)`,
             ]}
+            _hover={{ cursor: "pointer" }}
             position="relative"
         >
             <Box
