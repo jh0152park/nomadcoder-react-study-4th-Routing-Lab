@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 interface IButtonProps {
     name: string;
+    path?: string;
 }
 
-export default function Button({ name }: IButtonProps) {
+export default function Button({ name, path }: IButtonProps) {
     const navigate = useNavigate();
 
     return (
@@ -17,7 +18,13 @@ export default function Button({ name }: IButtonProps) {
             }}
             transition="all 0.1s linear"
             onClick={() => {
-                navigate(name === "Home" ? "/" : `/${name.toLowerCase()}`);
+                navigate(
+                    path
+                        ? `/${path}`
+                        : name === "Home"
+                        ? "/"
+                        : `/${name.toLowerCase()}`
+                );
             }}
         >
             {name}

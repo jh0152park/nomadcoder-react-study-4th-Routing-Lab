@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Author from "./pages/Author";
 import Book from "./pages/Book";
+import DetailOption from "./pages/DetailOption";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,22 @@ const router = createBrowserRouter([
             {
                 path: "author/:name/:book",
                 element: <Book />,
+            },
+            {
+                path: "author/:name/:book/chapters",
+                element: (
+                    <Book>
+                        <DetailOption option="Chapters" />
+                    </Book>
+                ),
+            },
+            {
+                path: "author/:name/:book/characters",
+                element: (
+                    <Book>
+                        <DetailOption option="Characters" />
+                    </Book>
+                ),
             },
         ],
     },
