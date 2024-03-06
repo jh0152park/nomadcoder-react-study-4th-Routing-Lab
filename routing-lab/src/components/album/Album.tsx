@@ -49,7 +49,13 @@ export default function Album({ image, width, height }: IAlbumProps) {
                 filter="brightness(1.2) opacity(0.8)"
                 mixBlendMode="color-dodge"
             />
-            <Image w="100%" h="100%" objectFit="cover" src={image} />
+            <Image
+                w="100%"
+                h="100%"
+                objectFit="cover"
+                src={image}
+                borderRadius="10px"
+            />
         </Box>
     );
 }
