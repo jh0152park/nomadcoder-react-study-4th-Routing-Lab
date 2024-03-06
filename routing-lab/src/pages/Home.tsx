@@ -6,7 +6,7 @@ export default function Home() {
     const authors = AUTHORS;
 
     return (
-        <HStack w="100%" justifyContent="center" mt="50px" spacing="50px">
+        <HStack w="100%" justifyContent="center" spacing="50px">
             {authors.map((author, index) => (
                 <Product
                     key={author.name}

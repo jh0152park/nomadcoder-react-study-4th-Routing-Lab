@@ -16,7 +16,7 @@ export default function Author() {
                     logoImage={LOGOS[NUMOFAUTHOR[author.name]]}
                     profileImage={book.image}
                     fontSize={20}
-                    nextPath={`author/${author.name}`}
+                    nextPath={`author/${author.name}/${book.name}`}
                 />
             ))}
         </HStack>
