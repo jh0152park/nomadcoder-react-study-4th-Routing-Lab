@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 `;
 
