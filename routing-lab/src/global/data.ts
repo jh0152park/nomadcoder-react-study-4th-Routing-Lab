@@ -14,12 +14,11 @@ interface IAuthor {
 export const AUTHORS: IAuthor[] = [
     {
         name: "J.K.Rowling",
-        profileImage:
-            "https://i.namu.wiki/i/9b5jFRAhHFQ6rSwYazc7_jiXTWoPRPVAdYrsEtOMVv4PZxIqV3g7OX4hdN_clDziJk5Kqy2CgEqxGZRrpu8K1HgGQVvVAykTFO5hhx2W_H3pnQcd1eVVasZEaPg3Ifz5FYBP8rdW4ZiykZBWAwZqQw.webp",
+        profileImage: "/resources/images/author/J.K.Rowling.png",
         books: [
             {
                 name: "Harry Potter and the Philosopher's Stone",
-                image: "https://m.media-amazon.com/images/I/71RVt35ZAbL._AC_UF1000,1000_QL80_.jpg",
+                image: "/resources/images/book/HarryPoter_Book1.png",
                 chapters: [
                     "The Boy Who Lived",
                     "The Vanishing Glass",
@@ -133,7 +132,7 @@ export const AUTHORS: IAuthor[] = [
             },
             {
                 name: "Harry Potter and the Chamber of Secrets",
-                image: "https://m.media-amazon.com/images/I/71RVt35ZAbL._AC_UF1000,1000_QL80_.jpg",
+                image: "/resources/images/book/HarryPoter_Book2.png",
                 chapters: [
                     "The Worst Birthday",
                     "Dobby's Warning",
@@ -250,12 +249,11 @@ export const AUTHORS: IAuthor[] = [
     },
     {
         name: "J.R.R.Tolkien",
-        profileImage:
-            "https://i.namu.wiki/i/SAC_Vlu6J4igHwSkDX95qMDf9Ok5IcLztpTpHahml0MeugGg6T8zlGmddWaJuqBP9KcMb1EFR9kFXIvKmrqV7OjlgA7Fudwi7T9PQIiaPF12XLOwjSpBi1BB-Sg8Fj-cDXTZdhzSJlfYIXHr5CzbHg.webp",
+        profileImage: "/resources/images/author/J.R.R.Tolkien.png",
         books: [
             {
                 name: "The Fellowship of the Ring",
-                image: "",
+                image: "/resources/images/book/The Fellowship of the Ring.png",
                 chapters: [
                     "A Long-expected Party",
                     "The Shadow of the Past",
@@ -335,7 +333,7 @@ export const AUTHORS: IAuthor[] = [
             },
             {
                 name: "The Two Towers",
-                image: "",
+                image: "/resources/images/book/The Two Towers.png",
                 chapters: [
                     "The Departure of Boromir",
                     "The Riders of Rohan",
