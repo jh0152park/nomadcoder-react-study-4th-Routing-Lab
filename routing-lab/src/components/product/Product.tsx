@@ -22,7 +22,7 @@ export default function Product({
     return (
         <VStack
             onClick={() => {
-                navigate(nextPath);
+                navigate(`/${nextPath}`);
             }}
         >
             <Album width={440} height={620} image={profileImage} />

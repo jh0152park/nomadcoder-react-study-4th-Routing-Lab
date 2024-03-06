@@ -4,6 +4,7 @@ import NotFound from "./pages/common/NotFount";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Author from "./pages/Author";
+import Book from "./pages/Book";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: "author/:name",
                 element: <Author />,
+            },
+            {
+                path: "author/:name/:book",
+                element: <Book />,
             },
         ],
     },

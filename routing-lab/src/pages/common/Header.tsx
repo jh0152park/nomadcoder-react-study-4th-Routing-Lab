@@ -9,6 +9,7 @@ export default function Header() {
             h="100px"
             justifyContent="center"
             spacing="50px"
+            mb="50px"
         >
             <Button name="Home" />
             <Button name="About" />
