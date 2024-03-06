@@ -1,4 +1,4 @@
-import { Heading, Image, VStack } from "@chakra-ui/react";
+import { Text, Image, VStack } from "@chakra-ui/react";
 import Album from "../album/Album";
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +7,7 @@ interface IProfileProps {
     logoImage: string;
     profileImage: string;
     nextPath: string;
+    fontSize: number;
 }
 
 export default function Product({
@@ -14,6 +15,7 @@ export default function Product({
     logoImage,
     profileImage,
     nextPath,
+    fontSize,
 }: IProfileProps) {
     const navigate = useNavigate();
 
@@ -27,11 +29,17 @@ export default function Product({
             <Image
                 _hover={{ cursor: "pointer" }}
                 src={logoImage}
-                objectFit="cover"
                 w="200px"
+                h="50px"
                 mt="20px"
             />
-            <Heading _hover={{ cursor: "pointer" }}>{name}</Heading>
+            <Text
+                fontWeight="bold"
+                fontSize={fontSize}
+                _hover={{ cursor: "pointer" }}
+            >
+                {name}
+            </Text>
         </VStack>
     );
 }

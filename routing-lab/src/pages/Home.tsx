@@ -1,6 +1,6 @@
 import { HStack } from "@chakra-ui/react";
 import { AUTHORS, LOGOS } from "../global/data";
-import Profile from "../components/product/Product";
+import Product from "../components/product/Product";
 
 export default function Home() {
     const authors = AUTHORS;
@@ -8,10 +8,11 @@ export default function Home() {
     return (
         <HStack w="100%" justifyContent="center" mt="50px" spacing="50px">
             {authors.map((author, index) => (
-                <Profile
+                <Product
                     key={author.name}
                     name={author.name}
                     logoImage={LOGOS[index]}
+                    fontSize={40}
                     profileImage={author.profileImage}
                     nextPath={`author/${author.name}`}
                 />
